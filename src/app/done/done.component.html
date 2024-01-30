@@ -1,0 +1,17 @@
+<div class="card shadow-lg mt-5">
+    <div class="card-header text-center py-4 border-0">
+        <h1 class="display-6 fw-bold">Done List</h1>
+    </div>
+    <div class="card-body p-4">
+
+        <ul class="list-group">
+            <li class="list-group-item mb-2 border py-3 rounded-3 bg-success fw-bold text-center" *ngFor="let item of dones" [@fadeIn]>
+                <span>
+                    {{item}}
+                    <span class="float-end text-secondary">
+                    </span>
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
